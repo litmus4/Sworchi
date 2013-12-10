@@ -1,0 +1,60 @@
+The Classes Which Is Being Planned Of Sworchi Game Engine
+
+ScEngine
+ScSceneMgr
+ScRenderer
+ScRendererDx9
+ScRendererDx11
+ScRendererOgl3
+
+ScSceneGraph
+ScRenderQueue
+ScRenderFrame
+ScRenderSurface
+ScRenderBlock
+ScRenderPass
+ScStateMgr
+
+                                                                                                                             ScEntity
+                                                                                         ScRenderObj                                                 ScLight       ScCamera
+                                               ScGeometryObj                                                                   ScParticleObj
+                 ScModelObj                            ScPrimitiveObj             ScSprite3DObj   ScGroupObj
+ScPointModelObj ScLineModelObj ScTriModelObj  ScPointObj ScLineObj ScTriPrimObj   ScBillboardObj
+
+
+                                                                         ScRenderData
+                                            ScGeometry                                           ScParticleSystem
+              ScModel                       ScPrimitive         ScSprite3D   ScGroup
+ScPointModel ScLineModel ScTriModel  ScPoint ScLine ScTriPrim   ScBillboard
+
+ScSprite2D
+
+ScNtMap
+ScGridMap
+ScTerrain
+ScFrustum
+ScQuadTree
+ScQuadTreeTerrainLod
+ScQuadTreeObjectLod
+ScDistanceObjectLod
+
+ScObjectFactory ???
+ScLightFactory
+ScCameraFactory
+
+ScMathUtil
+ScVector2 ScVector3 ScVector4 ScMatrix3 ScMatrix4 ScQuaternion
+ScRay ScSegment ScTriangle ScPlane ScRound ScSphere ScBox
+ScVec2Spline ScVec3Spline ScQuatSpline
+
+ScBinShader
+ScExtShader
+ScShaderArray
+
+EcClient EcClientSocket
+EcServer EcServerSocket
+
+       EcLogicActor_c                EcLogicActor_s
+EcLogicPlayer_c EcLogicNpc_c  EcLogicPlayer_s EcLogicNpc_s
+
+EcLogicHldr_s

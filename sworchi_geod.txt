@@ -1,0 +1,40 @@
+# Sworchi Geometry Data version 1_0
+
+geometry [ name = "body" type = animation skeleton = "hero" ] {
+
+    vertices [ numverts = 200 ] {
+        vert 0 {
+            pos (0.000000, 0.000000, 0.000000) color 0xffff0000 wei (0, 1)
+            norm (0.000000, 0.000000, 0.000000) tan (0.000000, 0.000000, 0.000000) binorm (0.000000, 0.000000, 0.000000)
+            texc 0 (0.000000, 0.000000) 1 (0.000000, 0.000000)
+        }
+        vert 1 {
+            pos (0.000000, 0.000000, 0.000000) color 0xffff0000 wei (1, 2)
+            norm (0.000000, 0.000000, 0.000000) tan (0.000000, 0.000000, 0.000000) binorm (0.000000, 0.000000, 0.000000)
+            texc 0 (0.000000, 0.000000) 1 (0.000000, 0.000000)
+        }
+    }
+  
+    texlist [ numtexs = 3 ] {
+        tex 0 "t0" 0
+        tex 1 "t1" 1
+        tex 2 "t2" 1
+    }
+    
+    indices [ offset = 0 type = trianglelist numprims = 345 ] {
+        prim 0 0 2 1
+        prim 1 3 5 4
+    }
+    
+    indices [ offset = 100 type = trianglestrip numprims = 234] {
+        start 100 101 102
+        prim 1 103
+        prim 2 104
+    }
+
+    bonerefs [ numrefs = 3 ] {
+        ref 0 0
+        ref 1 2
+        ref 2 3
+    }
+}
